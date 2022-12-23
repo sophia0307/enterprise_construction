@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Open+Sans&display=swap');
+/* 
+font-family: 'Barlow', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+:root{
+    /* color */
+    --color__basic: #4173fc;
+    --color__dark: #0048c8;
+    --color__light: #82a1ff;
+    --color__white: #ffffff;
+    --color__black: #000000;
+    --color__darkgray: #5a5a5a;
+
+    /* font size */
+    --font-large: 48px;
+    --font-medium: 28px;
+    --font-regular: 18px;
+    --font-small: 16px;
+    --font-micro: 14px;
+
+   /* font weight */
+   --weight-bold: 700;
+   --weight-semi-bold: 500;
+   --weight-regular: 400;
+}
+
+/* Universal tags */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{padding-left: 0;}
+li{list-style: none;}
+button {cursor: pointer;}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
