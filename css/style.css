@@ -70,12 +70,10 @@ body{
     padding: 16px 0;
     justify-content: space-between;
 }
-
 .navbar .logo > a{
     display: block;
     height: 100%;
 }
-
 .navbar .logo > a > img{
     height: inherit;
 }
@@ -89,7 +87,6 @@ body{
 .navbar .navbar_links li{
     padding: 8px 12px;
 }
-
 .navbar .navbar_menu li a{
     font-weight: var(--font-bold);
     color: var(--color__white);
@@ -100,7 +97,6 @@ body{
     color: var(--color__white);
     transition: all 0.3s;
 }
-
 .navbar .navbar_menu li a:hover,
 .navbar .navbar_links li a:hover{
     color: var(--color__orange);
