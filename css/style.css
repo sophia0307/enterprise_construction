@@ -61,7 +61,7 @@ body{
 /* button style */
 .btn{
     display: inline-block;
-    width: 180px;
+    min-width: 180px;
     height: 50px;
     text-align: center;
     line-height: 50px;
@@ -70,6 +70,7 @@ body{
     cursor: pointer;
     background-color: transparent;
     color: var(--color__black);
+    padding: 0 20px;
 }
 .btn.primary_btn{
     color: var(--color__white);
@@ -79,6 +80,11 @@ body{
 }
 .btn.primary_btn:hover{
     background: var(--color__dark);
+}
+
+/* text_center */
+.text_center{
+    text-align: center;
 }
 
 /* header: navigation & main visual */
@@ -172,31 +178,36 @@ body{
     flex-direction: column;
     align-items: flex-start;
 }
-.section_container .content_text .content_title{
+/* content - 공통 */
+.content_title{
     font-family: 'Barlow', sans-serif;
     font-size: var(--font-large);
     font-weight: var(--font-bold);
-    color: var(--color__black);
+    color: inherit;
     margin-bottom: 20px;
+    text-transform: capitalize;
 }
-.section_container .content_text .content_bar{
+.content_bar{
     display: block;
     width: 65px;
     height: 5px;
     background-color: var(--color__basic);
     margin-bottom: 20px;
 }
-.section_container .content_text .content_sub_title{
+.content_sub_title{
     font-family: 'Open Sans', sans-serif;
     font-size: var(--font-medium);
     font-weight: var(--font-bold);
-    color: var(--color__black);
+    color: inherit;
     margin-bottom: 20px;
+    text-transform: capitalize;
 }
-.section_container .content_text > p{
+.content_description{
     word-break: keep-all;
-    color: var(--color__black);
+    color: inherit;
 }
+/* content - 공통 */
+
 .section_container .content_img{
     display: flex;
     width: 100%;
@@ -225,4 +236,21 @@ body{
     height: auto;
     margin-top: -100px;
 }
+
 /* banner */
+.banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url(../images/building05.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.banner_container{
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color__white);
+}
+.banner_container > .content_description{
+    margin-bottom: 20px;
+}
