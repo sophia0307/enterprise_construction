@@ -17,7 +17,7 @@ font-family: 'Open Sans', sans-serif;
     --font-big: 72px;
     --font-large: 48px;
     --font-medium: 28px;
-    --font-regular: 18px;
+    --font-basic: 18px;
     --font-small: 16px;
     --font-micro: 14px;
 
@@ -204,6 +204,7 @@ body{
 }
 .content_description{
     word-break: keep-all;
+    margin-bottom: 20px;
     color: inherit;
 }
 /* content - 공통 */
@@ -251,6 +252,36 @@ body{
     align-items: center;
     color: var(--color__white);
 }
-.banner_container > .content_description{
-    margin-bottom: 20px;
+
+/* service */
+.content_img.content_left{
+    padding: 45px 40px 0 40px;
+    justify-content: flex-start;
+}
+.service_items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.service_item{
+    display: flex;
+    align-items: baseline;
+    padding-bottom:20px;
+}
+.service_item:nth-child(odd){
+    padding-right: 18px;
+}
+.service_item .service_icon{
+    font-size: 24px;
+    color: var(--color__basic);
+    padding-right: 10px;
+}
+.service_item .service_name{
+    font-size: 20px;
+    font-family:  'Open Sans', sans-serif;
+    margin-bottom: 10px;
+}
+.service > .section_container > .content_img > .img_container> .img_content > img{
+    width: auto;
+    height: 100%;
+    margin: 0 0 0 -300px;
 }
