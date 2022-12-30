@@ -372,3 +372,54 @@ body{
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
                       url(../images/building14.jpg);
 }
+
+/* news */
+.news_container{
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.news_list_container{
+    width: 100%;
+}
+.news_link{
+    float: right;
+    padding: 16px;
+    font-weight: var(--font-bold);
+    font-size: var(--font-small);
+    transition: all .6s;
+}
+.news_link:hover{
+    color:var(--color__orange);
+}
+.news_list{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.news_item{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.news_item > img{
+    width: auto;
+    height: 160px;
+    margin-bottom:16px;
+}
+.news_item > .news_title{
+    font-size: var(--font-basic);
+    font-weight: var(--font-bold);
+    color: var(--color__black);
+    margin-bottom: 16px;
+}
+.news_item > .news_text{
+    max-width:290px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    word-break: break-all;
+    margin-bottom: 10px;
+}
