@@ -101,8 +101,9 @@ body{
     height: 100px;
     border-bottom: 1px solid rgba(255,255,255,0.5);
     z-index: 1;
-    position:sticky;
+    position:fixed;
     top:0;
+    transition: all .3s; 
 }
 .navbar_container{
     height: inherit;
@@ -140,6 +141,12 @@ body{
 .navbar .navbar_menu li a:hover,
 .navbar .navbar_links li a:hover{
     color: var(--color__orange);
+}
+/* navbar scroll down  -> background color 변경 */
+.navbar.navbar_dark{
+    background-color: var(--color__dark) ;
+    border:none;
+    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.2) ;
 }
 .show_main{
     width: 100%;
