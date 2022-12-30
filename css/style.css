@@ -54,7 +54,6 @@ body{
 
 .inner{
     max-width: 1200px;
-    background-color: burlywood;
     margin: 0 auto;
 }
 
@@ -422,4 +421,93 @@ body{
     white-space: nowrap;
     word-break: break-all;
     margin-bottom: 10px;
+}
+
+/* footer */
+.footer{
+    background-color: var(--color__black);
+}
+.footer .information{
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    color: var(--color__white);
+}
+.information .article .logo{
+    font-size: var(--font-large);
+}
+.information .article .logo > img{
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.information .article .sns{
+    display: flex;
+    align-items: center;
+}
+.information .article .sns > li{
+    padding: 0 8px;
+}
+.information .article .sns > li > a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    background-color: var(--color__darkgray);
+    color: var(--color__white);
+    transition: all .3s;
+}
+.information .article .sns > li > a:hover{
+    background-color: var(--color__orange);
+}
+.information .article .footer_title{
+    font-size: var(--font-medium);
+    margin-bottom: 20px
+}
+.information .article .info_content{
+    display: flex;
+    flex-direction: column;
+}
+.information .article .info_content > img{
+    width: auto;
+    height: 180px;
+    margin-bottom: 20px;
+}
+.information .article .info_content > strong{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.information .article .info_content > span{
+    margin-bottom: 20px;
+    font-size: var(--font-basic);
+    font-weight: var(--font-semi-bold);
+}
+.information .article .info_content > span > i{
+    padding-right:8px;
+}
+.information .article .info_content > p{
+    font-size: var(--font-basic);
+    font-weight: var(--font-semi-bold);
+    line-height: var(--font-medium);
+}
+.footer .copyright{
+    width: 100%;
+    border-top: 2px solid rgba(255,255,255,0.2);
+    padding: 30px 0;
+}
+.copyright .copy_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color__white);
+}
+.copyright .copy_container .terms{
+    display: flex;
+}
+.copyright .copy_container .terms .line{
+    padding: 0 10px;
 }
