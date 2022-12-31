@@ -598,6 +598,25 @@ body{
 
     /* main */
     
+    /* projects */
+    .projects_container{
+        padding: 100px 20px;
+        flex-direction: column;
+    }
+    .projects_container > .btn{
+        align-self: flex-start;
+    }
+    .projects_grid{
+        grid-template-columns: 1fr;
+    }
+    .cell01{grid-column: 1/-1;}
+    .cell06{grid-column: 1/-1;}
+
+    /* news */
+    .news_container{
+        padding: 100px 20px;
+    }
+    
     /* footer */
     .footer .information{
         grid-template-columns: 1fr;
