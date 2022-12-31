@@ -537,7 +537,7 @@ body{
     padding: 0 10px;
 }
 
-/* Media Query - 768px 이하, 가로모드*/
+/* Media Query - 768px 이하*/
 @media screen and (max-width : 768px) {
     /* header */
     .navbar{
@@ -576,7 +576,7 @@ body{
     }
     .navbar .logo{
         height: 100%;
-        padding: 0 30px;
+        padding: 0 20px;
     }
     .navbar_container{
         flex-direction: column;
@@ -595,5 +595,21 @@ body{
         margin: 15px auto 40px;
         text-align: center;
     }
+
     /* main */
+    
+    /* footer */
+    .footer .information{
+        grid-template-columns: 1fr;
+        padding: 100px 20px;
+    }
+    .information .article .info_content > img{
+       display: none;
+    }
+    .copyright .copy_container{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left:20px;
+    }
 }
