@@ -148,18 +148,36 @@ body{
     border:none;
     box-shadow: 1px 0 3px rgba(0, 0, 0, 0.2) ;
 }
+/* navbar toggle */
+.navbar .toggle{
+    color: var(--color__white);
+    font-size: 24px;
+    cursor: pointer;
+    transition: all .3s;
+    display: none;
+    position: absolute;
+    right: 30px;
+    top: 28px;
+}
+.navbar .toggle:hover,
+.navbar .toggle.active{
+    color: var(--color__orange);
+}
 .show_main{
     width: 100%;
     height: inherit;
     display: flex;
     align-items: center;
 }
+.visual_container{
+    flex-grow: 1;    
+}
 .visual_container .main_message{
+    width: 100%;
     font-size: var(--font-big);
     font-family: 'Barlow', sans-serif;
     text-transform: capitalize;
     color: var(--color__white);
-    margin-right: 50%;
     line-height: 1;
 }
 .visual_container .sub_message{
@@ -517,4 +535,65 @@ body{
 }
 .copyright .copy_container .terms .line{
     padding: 0 10px;
+}
+
+/* Media Query - 768px 이하, 가로모드*/
+@media screen and (max-width : 768px) {
+    /* header */
+    .navbar{
+        height: 90px;
+    }
+    .navbar .navbar_menu.active,
+    .navbar .navbar_links.active{
+        display: flex;
+    }
+    .navbar .navbar_menu{
+        height: auto;
+        width: 100%;
+        padding: 20px 0;
+        flex-direction: column;
+        background-color: var(--color__dark);
+        display: none;
+    }
+    .navbar .navbar_menu li{
+        width: 100%;
+        text-align: center;
+    }
+    .navbar .navbar_menu li a{
+        display: block;
+        width: 100%;
+        padding: 8px 0; 
+    }
+    .navbar .navbar_links{
+        border-top:1px solid rgba(200, 200, 200, 0.2);
+        padding: 20px 0;
+        justify-content: center;
+        background-color: var(--color__dark);
+        display: none;
+    }
+    .navbar .toggle{
+        display: block;
+    }
+    .navbar .logo{
+        height: 100%;
+        padding: 0 30px;
+    }
+    .navbar_container{
+        flex-direction: column;
+        background-color: var(--color__dark);
+        justify-content: flex-start;
+    }
+    .visual_container{
+        text-align: center;
+    }
+    .visual_container .main_message{
+        width: 60%;
+        margin: 0 auto;
+        font-size: var(--font-large);
+    }
+    .visual_container .sub_message{
+        margin: 15px auto 40px;
+        text-align: center;
+    }
+    /* main */
 }
