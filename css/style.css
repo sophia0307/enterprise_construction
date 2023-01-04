@@ -427,17 +427,18 @@ body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding-bottom:20px;
 }
 .news_item > img{
     width: auto;
     height: 160px;
-    margin-bottom:16px;
+    margin-bottom:10px;
 }
 .news_item > .news_title{
     font-size: var(--font-basic);
     font-weight: var(--font-bold);
     color: var(--color__black);
-    margin-bottom: 16px;
+    margin-bottom: 10px;
 }
 .news_item > .news_text{
     max-width:290px;
@@ -652,6 +653,11 @@ body{
     /* news */
     .news_container{
         padding: 100px 20px;
+    }
+    
+    .news_item > img{
+    width: 100%;
+    height: auto;
     }
     
     /* footer */
